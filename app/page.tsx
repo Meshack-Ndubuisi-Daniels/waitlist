@@ -2,7 +2,7 @@ import WaitlistForm from "../components/WaitlistForm";
 
 export default function WaitlistPage() {
   return (
-    <div className="bg-cream min-h-screen flex flex-col items-center justify-center pt-40 px-10">
+    <div className="bg-cream min-h-screen flex flex-col items-center justify-center pt-40">
       <h1 className= "text-brown font-montserrat text-2xl mb-1">JOIN THE WAITLIST 🚀</h1>
       <WaitlistForm />
 
