@@ -1,5 +1,5 @@
 import './globals.css';
-// ... rest of your file
+import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({
   children,
