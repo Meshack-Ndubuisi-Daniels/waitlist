@@ -1,5 +1,17 @@
 export default function PrivacyPolicyPage() {
   return (
+    <html>
+      <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17622013112');
+</script>
+      </head>
+      <body>
     <div className="max-w-3xl mx-auto p-4 text-brown font-montserrat min-h-screen flex flex-col items-center">
       <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       <p>
@@ -14,5 +26,7 @@ export default function PrivacyPolicyPage() {
         geraldhenlesloop@gmail.com.
       </p>
     </div>
+        </body>
+      </html>
   );
 }
