@@ -1,18 +1,27 @@
+import script from 'next/script';
+
 export default function PrivacyPolicyPage() {
   return (
-    <html>
-      <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17622013112');
-</script>
-      </head>
-      <body>
+    
+    
     <div className="max-w-3xl mx-auto p-4 text-brown font-montserrat min-h-screen flex flex-col items-center">
+
+<head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"
+          strategy="afterInteractive"
+        />
+        {/* Inline config script */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17622013112');
+          `}
+        </Script>
+      </head>
+      
       <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       <p>
         By joining our waitlist, you consent to Nineteen60 storing and
@@ -26,7 +35,7 @@ export default function PrivacyPolicyPage() {
         geraldhenlesloop@gmail.com.
       </p>
     </div>
-        </body>
-      </html>
+     
+      
   );
 }
