@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <!-- Google tag (gtag.js) -->
+     
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,6 +17,7 @@ export default function RootLayout({
 
   gtag('config', 'AW-17622013112');
 </script>
+        
         <title>1960</title>
       </head>
       <body className="bg-cream">{children}</body>
