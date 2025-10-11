@@ -1,5 +1,6 @@
 import './globals.css';
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({
   children,
@@ -21,7 +22,7 @@ export default function RootLayout({
         
         <title>1960</title>
       </head>
-      <body className="bg-cream">{children}</body>
+      <body className="bg-cream">{children} <Analytics /></body>
     </html>
   );
 }
