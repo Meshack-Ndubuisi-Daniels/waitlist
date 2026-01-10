@@ -1,24 +1,10 @@
 import WaitlistForm from "../components/WaitlistForm";
-import script from 'next/script';
+
 
 export default function WaitlistPage() {
   return (
     <div className="bg-cream min-h-screen flex flex-col items-center justify-center pt-40">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"
-          strategy="afterInteractive"
-        />
-        
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17622013112');
-          `}
-        </Script>
-      </head>
+      
       
       <h1 className= "text-brown font-montserrat text-2xl mb-1">JOIN THE WAITLIST 🚀</h1>
       <WaitlistForm />
