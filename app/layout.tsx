@@ -1,6 +1,4 @@
-import './globals.css';
-import Script from 'next/script';
-import { Analytics } from "@vercel/analytics/next"
+import Script from 'next/script'; // Add this import
 
 export default function RootLayout({
   children,
@@ -9,20 +7,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head> 
-     
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17622013112');
-</script>
-        
-        <title>1960</title>
-      </head>
-      <body className="bg-cream">{children} <Analytics /></body>
+      <head /> {/* Optional: For other head elements */}
+      <body>
+        {children}
+        {/* Google Ads gtag.js script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"
+          strategy="afterInteractive" // Loads after page hydration
+        />
+        <Script
+          id="google-ads" // Unique ID for the script
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17622013112');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
