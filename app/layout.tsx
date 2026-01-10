@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <head> 
      
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17622013112"></script>
 <script>
