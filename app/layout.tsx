@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head /> {/* Optional: For other head elements */}
+      
       <body>
         {children}
         
