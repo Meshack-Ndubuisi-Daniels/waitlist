@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
       <p className="mt-2">
         Your data will not be shared with any third parties outside of our
         email service provider (Mailchimp). For full details, contact us at
-        geraldhenlesloop@gmail.com.
+        collection@nineteen60.store.
       </p>
     </div>
      
