@@ -1,5 +1,5 @@
 import WaitlistForm from "../components/WaitlistForm";
-import script from 'next/script';
+
 
 export default function WaitlistPage() {
   return (
