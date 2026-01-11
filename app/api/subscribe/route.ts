@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import mailchimp from "@mailchimp/mailchimp_marketing";
+export const runtime = "nodejs";
 
 
 mailchimp.setConfig({
